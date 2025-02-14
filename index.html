@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamento de Silas e Melissa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Casamento de Silas e Melissa</h1>
+        <canvas id="animationCanvas"></canvas>
+        <div class="buttons">
+            <button onclick="operacaoCasamento()">Operação lua de mel</button>
+            <button onclick="menuRecepcao()">Menu Recepção</button>
+        </div>
+    </div>
+    <div id="qrModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Chave PIX para contribuição</h2>
+            <div id="qrcode"></div>
+            <p>(21) 97030-7175 - Melissa Dias da Silva</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
