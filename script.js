@@ -20,7 +20,7 @@ function fecharModal() {
     document.getElementById('qrModal').style.display = 'none';
 }
 function menuRecepcao() {
-    window.location.href = './assets/menu.html';
+    window.location.href = 'menu.html';
 }
 function createPetal() {
     const petal = document.createElement('div');
