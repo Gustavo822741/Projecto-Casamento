@@ -1,27 +1,48 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casamento de Silas e Melissa</title>
+    <title>💍 Casamento de Silas e Melissa 💍</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Casamento de Silas e Melissa</h1>
+        <h1>💖 Casamento de Silas e Melissa 💖</h1>
         <canvas id="animationCanvas"></canvas>
         <div class="buttons">
-            <button onclick="operacaoCasamento()">Operação lua de mel</button>
-            <button onclick="menuRecepcao()">Menu Recepção</button>
+            <button class="parallax-btn" onclick="operacaoCasamento()">💰 Operação Lua de Mel</button>
+            <button class="parallax-btn" onclick="menuRecepcao()">🍽️ Menu Recepção</button>
         </div>
     </div>
-    <div id="qrModal" class="modal">
+    <div id="qrModal" class="modal full-screen petalas-background">
         <div class="modal-content">
             <span class="close" onclick="fecharModal()">&times;</span>
-            <h2>Chave PIX para contribuição</h2>
+            <h2>💸 Chave PIX para contribuição 💸</h2>
             <div id="qrcode"></div>
-            <p>(21) 97030-7175 - Melissa Dias da Silva</p>
+            <p>📱 (21) 97030-7175 - Melissa Dias da Silva</p>
+        </div>
+    </div>
+    <div id="menuModal" class="modal full-screen petalas-background">
+        <div class="modal-content wedding-menu">
+            <span class="close" onclick="fecharMenu()">&times;</span>
+            <h2>🍷 Menu da Recepção 🍷</h2>
+            <div class="toast-animation">
+                <img src="champagne-glasses.png" alt="🥂 Taças brindando">
+            </div>
+            <ol>
+                <li>🥖 Entradas: Barquete de salpicão</li>
+                <li>🥤 Refrigerante ou água</li>
+                <li>🍕 Torta salgada</li>
+                <li>🥤 Refrigerante</li>
+                <li>🥩 Jantar: Churrasco misto</li>
+                <li>🥤 Refrigerante</li>
+                <li>🍰 Sobremesa</li>
+                <li>🎁 Lembrancinha</li>
+                <li>💲 Em caso de algo fora do menu, pagamento à parte.</li>
+            </ol>
         </div>
     </div>
     <script src="script.js"></script>
